@@ -1,0 +1,10 @@
+function getAverageTestScore(scores) {
+    let total = 0, i;
+    for (i = 0; i < scores.length; i += 1) {
+        total += scores[i];
+    }
+    return total / scores.length;
+}
+
+const avg = getAverageTestScore([80, 100]);
+console.log(avg, '<-- should be 90');
