@@ -1,0 +1,16 @@
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.driverAge = isLegalDriver;
+}   
+
+function isLegalDriver() { 
+   let ageVerify = Boolean(this.age >= 16);
+   return ageVerify; 
+  }
+
+const youngPerson = new Person('Jane', 15);
+console.log(youngPerson.driverAge(), '<-- should be false'); 
+
+const olderPerson = new Person('Joan', 16);
+console.log(olderPerson.driverAge(), '<-- should be true');
