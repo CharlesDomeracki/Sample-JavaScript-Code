@@ -1,0 +1,15 @@
+function getSumOfDigits(num) {
+  let x = ("" + num).split("");
+  let result = 0;
+  for (i = 0; i < x.length; i++) {
+    n = Number(x[i]);
+    result += n;
+    console.log(result);
+   }
+   return result;
+}
+
+
+console.log(getSumOfDigits(42), '<-- should be 6');
+console.log(getSumOfDigits(103), '<-- should be 4');
+ 
