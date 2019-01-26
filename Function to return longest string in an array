@@ -1,0 +1,14 @@
+function getLongestString(strings) {
+  var lg = 0;
+  var longest;
+  for (i = 0; i < strings.length; i++) {
+    if (strings[i].length > lg) {
+      lg = strings[i].length;
+      longest = strings[i];
+    }
+  }
+  return longest;
+}
+
+const strings = ['long', 'longer', 'longest'];
+console.log(getLongestString(strings), '<-- should be "longest"');
