@@ -1,0 +1,14 @@
+function getVowelCount(s) {
+  cnt = s.length;
+  vowelcnt = 0;
+  for (i = 0; i < cnt; i++) {
+    if (s.charAt(i).match(/[aeiouAEIOU]/)) {
+        vowelcnt ++;
+     }
+  }
+  return vowelcnt;
+}
+
+
+
+console.log(getVowelCount('hello world'), '<-- should be 3');
