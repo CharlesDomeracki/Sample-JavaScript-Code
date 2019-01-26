@@ -1,0 +1,15 @@
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  }
+  Person.prototype.getInitials = function() {
+    var fni = this.firstName.charAt(0);
+    fni = fni.toUpperCase();
+    var lni = this.lastName.charAt(0);
+    lni = lni.toUpperCase();
+    var fnilni = fni + lni;
+    return fnilni;
+  }
+  
+const johnDoe = new Person('john', 'doe');
+console.log(johnDoe.getInitials(), '<-- should be "JD"');
