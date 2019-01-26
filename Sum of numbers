@@ -13,3 +13,22 @@ function getSumOfDigits(num) {
 console.log(getSumOfDigits(42), '<-- should be 6');
 console.log(getSumOfDigits(103), '<-- should be 4');
  
+function getSummedAge(people) {
+  let cnt = people.length;
+  let x = 0;
+  for (i = 0; i < cnt; i++) {
+    x += people[i].age;
+  }
+  return x;
+}
+
+/* Do not modify code below this line */
+
+const examplePeopleArray = [
+  { name: 'John', age: 10 },
+  { name: 'Jack', age: 20 },
+  { name: 'Jane', age: 25 }
+];
+
+console.log(getSummedAge(examplePeopleArray), '<-- should be 55');
+ 
