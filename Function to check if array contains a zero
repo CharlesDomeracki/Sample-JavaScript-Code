@@ -1,0 +1,8 @@
+function doesArrayContainZero(numbers) {
+  var n = numbers.includes(0);
+  return n;
+}
+
+
+console.log(doesArrayContainZero([1, 2, 3]), '<-- should be false');
+console.log(doesArrayContainZero([1, 0, 2]), '<-- should be true');
