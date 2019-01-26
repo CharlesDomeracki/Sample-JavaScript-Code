@@ -1,0 +1,9 @@
+function isRoundedNumberEven(decimal) {
+  let y = Math.round(decimal);
+    x = (y % 2) == 0; 
+    return x;
+  }
+
+
+console.log(isRoundedNumberEven(2.2), '<-- should be true');
+console.log(isRoundedNumberEven(2.8), '<-- should be false');
