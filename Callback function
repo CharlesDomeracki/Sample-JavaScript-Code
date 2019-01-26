@@ -1,0 +1,12 @@
+function invokeCallback(cb) {
+  return cb('hello');
+}
+
+
+const exampleCallback = function() {
+  return 'hello';
+};
+
+const invokedResult = invokeCallback(exampleCallback);
+
+console.log(invokedResult, '<-- should be "hello"');
