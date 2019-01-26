@@ -1,0 +1,7 @@
+function getLargestNumber(numbers) {
+  return Math.max(...numbers);
+}
+
+
+const largestNumber = getLargestNumber([1, 9, 5]);
+console.log(largestNumber, '<-- should be 9');
