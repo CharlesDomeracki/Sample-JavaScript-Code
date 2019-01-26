@@ -1,0 +1,8 @@
+function Person(name) {
+  Person.prototype.shoutName = function() {
+    return name.toUpperCase();
+  }
+}
+
+const john = new Person('John');
+console.log(john.shoutName(), '<-- should be "JOHN"');
