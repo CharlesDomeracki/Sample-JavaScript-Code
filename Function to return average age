@@ -1,0 +1,16 @@
+function getRoundedAverageAge(people) {
+  let cnt = people.length;
+  let x = 0;
+  for (i = 0; i < cnt; i++) {
+    x += people[i].age;
+  }
+  return Math.ceil(x/cnt);
+}
+
+const examplePeopleArray = [
+  { name: 'John', age: 19 },
+  { name: 'Jack', age: 21 },
+  { name: 'Jane', age: 22 }
+];
+
+console.log(getRoundedAverageAge(examplePeopleArray), '<-- should be 21');
