@@ -6,3 +6,17 @@ function doesArrayContainZero(numbers) {
 
 console.log(doesArrayContainZero([1, 2, 3]), '<-- should be false');
 console.log(doesArrayContainZero([1, 0, 2]), '<-- should be true');
+
+function doesArrayContainZero(numbers) {
+  for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] === 0) {
+            return true;
+        }
+    }
+    return false;
+}
+
+/* Do not modify code below this line */
+
+console.log(doesArrayContainZero([1, 2, 3]), '<-- should be false');
+console.log(doesArrayContainZero([1, 0, 2]), '<-- should be true');
