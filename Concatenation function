@@ -1,3 +1,5 @@
+
+
 function addExclamation(s) {
   let newString = this.newString;
   let exclam = this.exlclam;
@@ -5,5 +7,13 @@ function addExclamation(s) {
   this.newString = s.concat(this.exclam);
   return this.newString;
   }
+
+console.log(addExclamation('hello world'), '<-- should be "hello world!"');
+
+function addExclamation(s) {
+ s = s + '!';
+ return s;
+}
+
 
 console.log(addExclamation('hello world'), '<-- should be "hello world!"');
