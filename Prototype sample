@@ -13,3 +13,20 @@ function Person(firstName, lastName) {
   
 const johnDoe = new Person('john', 'doe');
 console.log(johnDoe.getInitials(), '<-- should be "JD"');
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+Person.prototype.isLegalDriver = function() {
+  x = this.age >= 16;
+  return x;
+}
+/* Do not modify code below this line */
+
+const youngPerson = new Person('Jane', 15);
+console.log(youngPerson.isLegalDriver(), '<-- should be false');
+
+const olderPerson = new Person('Joan', 16);
+console.log(olderPerson.isLegalDriver(), '<-- should be true');
