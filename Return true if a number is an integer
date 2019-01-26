@@ -1,0 +1,6 @@
+function isInteger(num) {
+  return x = Number.isInteger(num);
+}
+
+console.log(isInteger(1), '<-- should be true');
+console.log(isInteger(1.5), '<-- should be false');
