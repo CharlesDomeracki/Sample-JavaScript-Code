@@ -1,0 +1,8 @@
+function convertStringToArray(s) {
+  return s = s.split("");
+}
+
+const exampleString = 'hello';
+const stringAsArray = convertStringToArray(exampleString);
+
+console.log(stringAsArray, '<-- should be ["h", "e", "l", "l", "o"]');
